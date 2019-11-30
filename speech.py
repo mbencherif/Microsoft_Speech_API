@@ -3,7 +3,7 @@ import azure.cognitiveservices.speech as speechsdk
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 def Speech_To_Animation(img_option):
-    speech_key, service_region = "ab60b285299b4dfcb03ef97c2e8dd59a", "eastasia"
+    speech_key, service_region = "5f017e07291d45858d51108d1f956ba", "eastasia"
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
     speech_filename = './Resource/speech.wav'
@@ -51,7 +51,7 @@ def Speech_To_Animation(img_option):
     print("SDA Done.")
 
 def Text_To_Animation(img_option):
-    speech_key, service_region = "ab60b285299b4dfcb03ef97c2e8dd59a", "eastasia"
+    speech_key, service_region = "5f017e07291d45858d51108d1f956ba", "eastasia"
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
     with open("./Resource/Text.txt", "r") as fileObj:
         content = fileObj.read()
