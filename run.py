@@ -56,7 +56,7 @@ def run():
     print(base64_data2)
     if option:
         return jsonify({
-            'video_generated': 'data:video/mp4;base64,'+str(base64_data2)[2:-1]
+            'video_generated': 'data:video/mp4;base64,'+str(base64_data)[2:-1]
         })
     else:
         return jsonify({
