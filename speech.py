@@ -39,11 +39,11 @@ def Speech_To_Animation(img_option):
             print("Error details: {}".format(cancellation_details.error_details))
     print("TTS Done.")
 
-    va = sda.VideoAnimator(model_path="crema")# Instantiate the animator
+    va = sda.VideoAnimator(model_path="grid")# Instantiate the animator
     if img_option:
         source_path = "Resource/userFace.bmp"
     else:
-        source_path = "Resource/speaker2.jpg"
+        source_path = "Resource/speaker1.bmp"
     vid, aud = va(source_path, "./Resource/rightAudio.wav")
     va.save_video(vid, aud, "./Resource/right.mp4")
     vid, aud = va(source_path, "./Resource/speech.wav")
@@ -73,11 +73,11 @@ def Text_To_Animation(img_option):
             print("Error details: {}".format(cancellation_details.error_details))
     print("TTS Done.")
 
-    va = sda.VideoAnimator(model_path="crema")# Instantiate the animator
+    va = sda.VideoAnimator(model_path="grid")# Instantiate the animator
     if img_option:
         source_path = "Resource/userFace.bmp"
     else:
-        source_path = "Resource/speaker2.jpg"
+        source_path = "Resource/speaker1.bmp"
     vid, aud = va(source_path, "./Resource/rightAudio.wav")
     va.save_video(vid, aud, "./Resource/right.mp4")
     vid, aud = va(source_path, "./Resource/speech.wav")
