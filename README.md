@@ -1,3 +1,5 @@
+# MimicSelf-基于STT、TTS、SDA的口型视频模仿发音矫正助手
+
 ## MimicSelf 项目说明文档
 
  * [MimicSelf 项目说明文档](#mimicself-项目说明文档)
